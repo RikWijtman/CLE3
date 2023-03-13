@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-<p>IK ben sil</p>
+    <h1>HomePage</h1>
 </body>
 </html>
