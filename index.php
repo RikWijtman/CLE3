@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jouw Reis</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="container">
@@ -13,10 +13,10 @@
         <img src="logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="Metro"> METRO</a></li>
-                <li><a href="Trein">TREIN</a></li>
-                <li><a href="Bus">BUS</a></li>
-                <li><a href="sander index.html">TRAM</a></li>
+                <li><a href="metro.php"> METRO</a></li>
+                <li><a href="trein.php">TREIN</a></li>
+                <li><a href="bus.php">BUS</a></li>
+                <li><a href="tram.php">TRAM</a></li>
             </ul>
         </nav>
         <img src="menu.png" alt="menu-icon">
