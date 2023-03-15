@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="navbar">
-        <img src="logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo">
         <nav>
             <ul>
                 <li><a href="metro.php"> METRO</a></li>
@@ -19,7 +19,7 @@
                 <li><a href="tram.php">TRAM</a></li>
             </ul>
         </nav>
-        <img src="menu.png" alt="menu-icon">
+        <img src="img/menu.png" alt="menu-icon">
     </div>
 
     <div class="row">
