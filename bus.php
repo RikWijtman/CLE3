@@ -10,5 +10,10 @@
 </head>
 <body>
     <h1>Pagina voor bus (rik)</h1>
+    <img src="img/MapBus.png" width="459" draggable="false" usemap="#workmap" alt="">
+    <map name="workmap">
+        <area shape="rect" coords="50,0,80,30" alt="" href="index.php">
+        <area shape="rect" coords="50,0,80,30" alt="" href="index.php">
+    </map>
 </body>
 </html>

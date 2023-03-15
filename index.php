@@ -10,5 +10,6 @@
 </head>
 <body>
     <h1>HomePage</h1>
+    <a href="bus.php">bus</a>
 </body>
 </html>
