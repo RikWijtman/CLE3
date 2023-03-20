@@ -50,10 +50,5 @@
     </div>
 
 </div>
-
-
-
-
-    <a href="bus.php">bus</a>
 </body>
 </html>
