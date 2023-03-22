@@ -1,0 +1,254 @@
+{
+  "Stations": [
+    {
+      "station-name": "Station Delft",
+      "place-name": "Delft",
+      "todo": [
+        "Pizzeria",
+        "IJssallon"
+      ],
+      "transfer": [
+        "Tram",
+        "Trein"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 4
+    },
+    {
+      "station-name": "Zuidpoort",
+      "place-name": "Delft",
+      "todo": [
+        "Supermarkt",
+        "Winkelstraten",
+        "Terrasjes",
+        "Bioscoop"
+      ],
+      "transfer": {
+
+      },
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
+    },
+    {
+      "station-name": "Julianalaan",
+      "place-name": "Delft",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Aula",
+      "place-name": "Delft",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Prof. Krausstraat",
+      "place-name": "Delft",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Laan Der Zeven Linden",
+      "place-name": "Delfgauw",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Delfgauwseplein",
+      "place-name": "Delfgauw",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Rijskade",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Raadhuisplein",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Station Pijnacker Centrum",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Vlielandseweg",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Zijdeweg",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Katwijkerlaan Nr. 105",
+      "place-name": "Pijnacker",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Driesprong",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Nathaliegang",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Station Zoetermeer",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Viaduct Afrikaweg",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Meerzichtlaan",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    },
+    {
+      "station-name": "Centrum West",
+      "place-name": "Zoetermeer",
+      "todo": {
+
+      },
+      "transfer": {
+
+      },
+      "accessibility": {
+
+      }
+    }
+  ]
+}

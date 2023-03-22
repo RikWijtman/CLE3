@@ -14,7 +14,7 @@
     <h2>Busroute Zoetermeer naar Delft.</h2>
     <div class="cols">
         <div>
-            <img src="img/MapBus.png" width="459" draggable="false" usemap="#workmap" alt="">
+            <img src="img/MapBus.png" width="384" draggable="false" usemap="#workmap" alt="">
             <map name="workmap">
                 <area shape="circle" coords="62,10,20" alt="" href="busstations/delftStation.php">
             </map>
