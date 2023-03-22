@@ -1,8 +1,8 @@
 {
-  "Stations": [
+  "stations": [
     {
-      "station-name": "Station Delft",
-      "place-name": "Delft",
+      "stationname": "Station Delft",
+      "placename": "Delft",
       "todo": [
         "Pizzeria",
         "IJssallon"
@@ -15,8 +15,8 @@
       "rush": 4
     },
     {
-      "station-name": "Zuidpoort",
-      "place-name": "Delft",
+      "stationname": "Zuidpoort",
+      "placename": "Delft",
       "todo": [
         "Supermarkt",
         "Winkelstraten",
@@ -30,225 +30,220 @@
       "rush": 3
     },
     {
-      "station-name": "Julianalaan",
-      "place-name": "Delft",
-      "todo": {
+      "stationname": "Julianalaan",
+      "placename": "Delft",
+      "todo": [
+        "IJszaak",
+        "Klein parkje"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Aula",
-      "place-name": "Delft",
-      "todo": {
+      "stationname": "Aula",
+      "placename": "Delft",
+      "todo": [
+        "Technische universiteit Delft",
+        "Royal Delft (Museum aardewerk)"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
     },
     {
-      "station-name": "Prof. Krausstraat",
-      "place-name": "Delft",
-      "todo": {
+      "stationname": "Prof. Krausstraat",
+      "placename": "Delft",
+      "todo": [
+        "Kapper",
+        "Snackbar"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Laan Der Zeven Linden",
-      "place-name": "Delfgauw",
-      "todo": {
+      "stationname": "Laan Der Zeven Linden",
+      "placename": "Delfgauw",
+      "todo": [
+        "Albert Heijn",
+        "Verhage"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk maar kan wat smal zijn voor een rolstoel",
+      "rush": 2
     },
     {
-      "station-name": "Delfgauwseplein",
-      "place-name": "Delfgauw",
-      "todo": {
+      "stationname": "Delfgauwseplein",
+      "placename": "Delfgauw",
+      "todo": [
+        "Pizzeria",
+        "Verzorgingszaak"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Rijskade",
-      "place-name": "Pijnacker",
-      "todo": {
+      "stationname": "Rijskade",
+      "placename": "Pijnacker",
+      "todo": [
+        "Niks"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Raadhuisplein",
-      "place-name": "Pijnacker",
-      "todo": {
+      "stationname": "Raadhuisplein",
+      "placename": "Pijnacker",
+      "todo": [
+        "Restaurants",
+        "Winkelcentrum",
+        "Markt in het weekend"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 2
     },
     {
-      "station-name": "Station Pijnacker Centrum",
-      "place-name": "Pijnacker",
-      "todo": {
-
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      "stationname": "Station Pijnacker Centrum",
+      "placename": "Pijnacker",
+      "todo": [
+        "Apotheek"
+      ],
+      "transfer": [
+        "Metro"
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 2
     },
     {
-      "station-name": "Vlielandseweg",
-      "place-name": "Pijnacker",
-      "todo": {
+      "stationname": "Vlielandseweg",
+      "placename": "Pijnacker",
+      "todo": [
+        "Niks"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Zijdeweg",
-      "place-name": "Pijnacker",
-      "todo": {
+      "stationname": "Zijdeweg",
+      "placename": "Pijnacker",
+      "todo": [
+        "Dierenwinkel",
+        "Electronicawinkel"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Katwijkerlaan Nr. 105",
-      "place-name": "Pijnacker",
-      "todo": {
+      "stationname": "Katwijkerlaan Nr. 105",
+      "placename": "Pijnacker",
+      "todo": [
+        "Beautycentrum"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Driesprong",
-      "place-name": "Zoetermeer",
-      "todo": {
+      "stationname": "Driesprong",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Tuincentrum"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Nathaliegang",
-      "place-name": "Zoetermeer",
-      "todo": {
+      "stationname": "Nathaliegang",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Winkelcentrum",
+        "Eetgelegenheden",
+        "Bibliotheek"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 3
     },
     {
-      "station-name": "Station Zoetermeer",
-      "place-name": "Zoetermeer",
-      "todo": {
-
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      "stationname": "Station Zoetermeer",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Station"
+      ],
+      "transfer": [
+        "Trein"
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 4
     },
     {
-      "station-name": "Viaduct Afrikaweg",
-      "place-name": "Zoetermeer",
-      "todo": {
+      "stationname": "Viaduct Afrikaweg",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Niks"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Meerzichtlaan",
-      "place-name": "Zoetermeer",
-      "todo": {
+      "stationname": "Meerzichtlaan",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Graffititunnel"
+      ],
+      "transfer": [
 
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     },
     {
-      "station-name": "Centrum West",
-      "place-name": "Zoetermeer",
-      "todo": {
-
-      },
-      "transfer": {
-
-      },
-      "accessibility": {
-
-      }
+      "stationname": "Centrum West",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Eetgelegenheden",
+        "Winkelcentrum"
+      ],
+      "transfer": [
+        "Tram",
+        "Trein"
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 4
     }
   ]
 }

@@ -16,7 +16,7 @@
         <div>
             <img src="img/MapBus.png" width="384" draggable="false" usemap="#workmap" alt="">
             <map name="workmap">
-                <area shape="circle" coords="62,10,20" alt="" href="busstations/delftStation.php">
+                <area shape="circle" coords="62,10,20" alt="" href="busstations.php">
             </map>
         </div>
         <div>
