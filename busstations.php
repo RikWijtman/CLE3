@@ -1,24 +1,12 @@
 <?php
-//Load file contents in PHP var
 $station = file_get_contents("js/bus.json");
-//print_r($playlist);
-//exit;
 
-//Decode JSON to PHP object
+$id = $_GET['id'];
+
 $stationJson = json_decode($station);
 
-//echo "<pre>";
-//print_r($playlistJson);
-//echo "</pre>";
-
-//Echo properties directly
-echo $stationJson->stations[0]->stationname . "<br/>";
-
-//Loop through list of albums from all artist & print title
-foreach ($stationJson->stations as $station) {
-    echo $station->stationname . "<br>";
-    echo $station->placename . "<br>";
-}
+echo $stationJson->stations[$id]->stationname . "<br>";
+echo $stationJson->stations[$id]->placename . "<br>";
 ?>
 
 <!doctype html>
