@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tram pagina</title>
     <link rel="stylesheet" href="Tram style.css">
+    <script type="text/javascript" src="js/tram.js" defer></script>
 </head>
 <body>
 <div class="container">
