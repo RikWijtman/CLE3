@@ -23,7 +23,7 @@
         <img src="menu.png" alt="menu-icon">
     </div>
     <div>
-        <button class="tips">Tips</button>
+        <button id="tips">Tips</button>
         <div id="list">
         </div>
         </div>
