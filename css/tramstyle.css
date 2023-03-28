@@ -73,7 +73,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 50%;
 }
-tips{
+button{
     display: inline-block;
     background-color: #4CAF50;
     color: #fff;
