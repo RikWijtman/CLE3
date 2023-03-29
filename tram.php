@@ -27,6 +27,15 @@
         <div id="list">
         </div>
         </div>
+    <h1>Tramhaltes Rotterdam</h1>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
+        }
+    </script>
 
 </body>
 </html>
