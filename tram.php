@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <div class="navbar">
-        <img src="logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo">
         <nav>
             <ul>
                 <li><a href="Metro"> METRO</a></li>
@@ -20,7 +20,7 @@
                 <li><a href="Tram">TRAM</a></li>
             </ul>
         </nav>
-        <img src="menu.png" alt="menu-icon">
+        <img src="img/menu.png" alt="menu-icon">
     </div>
     <div>
         <button id="tips">Tips</button>
