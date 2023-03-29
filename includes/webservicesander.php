@@ -106,8 +106,9 @@ function getLocations() {
 /**
  * @return array
  */
-function getLocationDetails()
+function getLocationDetails($id)
 {
+    echo $id;
     return [
         [
             "id" => 1,
