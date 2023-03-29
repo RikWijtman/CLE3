@@ -22,7 +22,6 @@
         <div>
             <button id="tips">Tips</button>
             <div id="list">
-
             </div>
         </div>
     </div>

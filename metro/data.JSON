@@ -28,7 +28,18 @@
       ],
       "accessibility": "Toegankelijk, ook met rolstoel",
       "rush": 3
-    }
-  ]
-}
+    },
+    {
+      "stationname": "Meerzichtlaan",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Graffititunnel"
+      ],
+      "transfer": [
 
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
+    }
+    ]
+  }
