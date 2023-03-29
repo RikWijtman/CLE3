@@ -32,29 +32,31 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
     <script>
-        function initMap() {
-            // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
-            // Maak een Leaflet-kaart met de juiste coördinaten en zoomniveau
-            var map = L.map('mapid').setView([51.9244201, 4.4777325], 13);
+        function initMap(// Maak een Leaflet-kaart met de juiste coördinaten en zoomniveau
+        var map = L.map('mapid').setView([51.9244201, 4.4777325], 13);
 
-// Voeg een basiskaart toe aan de kaart (bijvoorbeeld OpenStreetMap)
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                    'Tramhaltes data &copy; <a href="https://www.ret.nl/">RET</a>',
-                maxZoom: 18
-            }).addTo(map);
+        // Voeg een basiskaart toe aan de kaart (bijvoorbeeld OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Tramhaltes data &copy; <a href="https://www.ret.nl/">RET</a>',
+            maxZoom: 18
+        }).addTo(map);
 
-// Haal de gegevens van de tramhaltes op via de API van de RET
-            fetch('https://api.ret.net/v1/lines/14/stops')
-                .then(response => response.json())
-                .then(data => {
-                    // Verwerk de gegevens en voeg markers toe aan de kaart
-                    data.forEach(stop => {
-                        var marker = L.marker([stop.location.latitude, stop.location.longitude]).addTo(map);
-                        marker.bindPopup(stop.name);
-                    });
+        // Haal de gegevens van de tramhaltes op via de API van de RET
+        fetch('https://api.ret.net/v1/lines/14/stops')
+            .then(response => response.json())
+            .then(data => {
+                // Verwerk de gegevens en voeg markers toe aan de kaart
+                data.forEach(stop => {
+                    var marker = L.marker([stop.location.latitude, stop.location.longitude]).addTo(map);
+                    marker.bindPopup(stop.name);
                 });
+            });            // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
+
+        ) {
+            // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
+
         }
     </script>
 
