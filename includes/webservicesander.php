@@ -108,12 +108,11 @@ function getLocations() {
  */
 function getLocationDetails($id)
 {
-    echo $id;
     $data = getLocations();
     $tot = 0;
     for ($i = 0; $i < count($data); $i++) {
-        if ($id==$data[$i]["id"])
-        {print_r($data[$i]);}
+        if ($id==$data[$i]["id"]) {
+        return $data[$i]}
     }
 }
 if (!isset($_GET['id'])) {
