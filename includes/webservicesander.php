@@ -108,17 +108,23 @@ function getLocations() {
  */
 function getLocationDetails($id)
 {
+    //haal de locaties op
     $data = getLocations();
-    $tot = 0;
+    // $i is 0 als die kleiner is het getal van het id doet de code +1
     for ($i = 0; $i < count($data); $i++) {
+        //hier word het id gecontroleerd of de id overeenkomt met de data
         if ($id==$data[$i]["id"]) {
+            //als die gelijk is laat hij de gegevens van de tram zien op de website
         return $data[$i];
         }
     }
 }
+//hier contoleer je of er iets extras in de url staat
 if (!isset($_GET['id'])) {
+    //hier haalt die alle locaties op
     $data = getLocations();
 } else {
+    //hier haalt die 1 locatie op aan de hand van de waarde van de url
     $data = getLocationdetails($_GET['id']);
 }
 
