@@ -1,29 +1,45 @@
 {
-  "tramlijn": "14",
-  "tramhaltes": [
+  "stations": [
     {
-      "id": "12345",
-      "naam": "Rotterdam Centraal",
-      "locatie": {
-        "latitude": 51.9244201,
-        "longitude": 4.4777325
-      }
+      "stationname": "beurs",
+      "placename": "Rotterdam",
+      "todo": [
+        "Mac Donalds",
+        "Maritiem Museum"
+      ],
+      "transfer": [
+        "Tram"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 5
     },
     {
-      "id": "67890",
-      "naam": "Stadhoudersweg",
-      "locatie": {
-        "latitude": 51.9340307,
-        "longitude": 4.4724241
-      }
+      "stationname": "blaak",
+      "placename": "Rotterdam",
+      "todo": [
+        "Supermarkt",
+        "Winkelstraten",
+        "Terrasjes",
+        "Markthal"
+      ],
+      "transfer": [
+        "trein",
+        "tram"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
     },
     {
-      "id": "13579",
-      "naam": "Burgemeester Meineszplein",
-      "locatie": {
-        "latitude": 51.9177604,
-        "longitude": 4.4531673
-      }
+      "stationname": "Meerzichtlaan",
+      "placename": "Zoetermeer",
+      "todo": [
+        "Graffititunnel"
+      ],
+      "transfer": [
+
+      ],
+      "accessibility": "Toegankelijk, ook voor rolstoel",
+      "rush": 1
     }
   ]
 }
