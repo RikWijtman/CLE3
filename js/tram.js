@@ -36,6 +36,6 @@ fetch('https://api.ret.net/v1/lines/14/stops')
         data.forEach(stop => {
             var marker = L.marker([stop.location.latitude, stop.location.longitude]).addTo(map);
             marker.bindPopup(stop.name);
-        })
+        });
     });
 
