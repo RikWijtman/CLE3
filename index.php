@@ -13,7 +13,7 @@
         <img src="img/logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="metro.php"> METRO</a></li>
+                <li><a href="metro/metro.html"> METRO</a></li>
                 <li><a href="trein.php">TREIN</a></li>
                 <li><a href="bus.php">BUS</a></li>
                 <li><a href="tram.php">TRAM</a></li>
