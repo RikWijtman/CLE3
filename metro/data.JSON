@@ -1,0 +1,34 @@
+{
+  "stations": [
+    {
+    "stationname": "beurs",
+    "placename": "Rotterdam",
+    "todo": [
+      "Mac Donalds",
+      "Maritiem Museum"
+    ],
+    "transfer": [
+      "Tram"
+    ],
+    "accessibility": "Toegankelijk, ook met rolstoel",
+    "rush": 5
+    },
+    {
+      "stationname": "blaak",
+      "placename": "Rotterdam",
+      "todo": [
+        "Supermarkt",
+        "Winkelstraten",
+        "Terrasjes",
+        "Markthal"
+      ],
+      "transfer": [
+        "trein",
+        "tram"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
+    }
+  ]
+}
+
