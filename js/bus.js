@@ -1,8 +1,22 @@
 let button = document.getElementById('tips');
-button.addEventListener('click', addItem);
+window.addEventListener('init', loadHandler);
 let listActive = false;
 
-function addItem() {
+function loadHandler() {
+    fetch("localhost/CLE3/includes/decodeRik.php")
+    .then((response) => {
+        if(response.ok) {
+            return response.json();
+        }
+        throw new Error(response.statusText);
+    })
+    .then(ajaxSuccesHandler)
+    .catch(ajaxErrorHandler);
+
+    button.addEventListener('click', tipsHandler);
+}
+
+function tipsHandler() {
     let div = document.getElementById('list')
     if (!listActive) {
         let item = document.createElement('p');
@@ -16,4 +30,12 @@ function addItem() {
         document.querySelector("#list").innerHTML = ``;
         listActive = false;
     }
+}
+
+function ajaxSuccesHandler() {
+
+}
+
+function ajaxErrorHandler() {
+
 }
