@@ -30,7 +30,7 @@
     <h1>Tramhaltes Rotterdam</h1>
     <div id="map"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
+    <script> src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" async defer></script>
     <script>
         function initMap(// Maak een Leaflet-kaart met de juiste coördinaten en zoomniveau
         var map = L.map('mapid').setView([51.9244201, 4.4777325], 13);
@@ -52,9 +52,7 @@
                     var marker = L.marker([stop.location.latitude, stop.location.longitude]).addTo(map);
                     marker.bindPopup(stop.name);
                 });
-            });            // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
-
-        ) {
+            });) {
             // voeg hier de JavaScript-code voor het weergeven van de tramhaltes in Rotterdam toe
 
         }
