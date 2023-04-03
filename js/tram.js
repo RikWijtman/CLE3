@@ -12,30 +12,44 @@ function addItem() {
         div.appendChild(item);
 
         listActive = true;
-    }else{
+    } else {
         document.querySelector("#list").innerHTML = ``;
         listActive = false;
     }
 }
-// Maak een Leaflet-kaart met de juiste coördinaten en zoomniveau
-var map = L.map('mapid').setView([51.9244201, 4.4777325], 13);
 
-// Voeg een basiskaart toe aan de kaart (bijvoorbeeld OpenStreetMap)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Tramhaltes data &copy; <a href="https://www.ret.nl/">RET</a>',
-    maxZoom: 18
-}).addTo(map);
 
-// Haal de gegevens van de tramhaltes op via de API van de RET
-fetch('https://api.ret.net/v1/lines/14/stops')
-    .then(response => response.json())
-    .then(data => {
-        // Verwerk de gegevens en voeg markers toe aan de kaart
-        data.forEach(stop => {
-            var marker = L.marker([stop.location.latitude, stop.location.longitude]).addTo(map);
-            marker.bindPopup(stop.name);
-        });
+let elements = document.getElementsByClassName("location");
+
+for(let i = 0; i < elements.length; i++) {
+    elements[i].onclick = function () { $('#contactForm').fadeToggle();
+        var element = event.target;
+        $('#Locatienaam' ).text(element.dataset.id);
+        alert(elements.dataset.id)
+ //       var element = event.target;
+//      alert(element.dataset.id);
+
+    }
+}
+// With the above scripts loaded, you can call `tippy()` with a CSS
+// selector and a `content` prop:
+tippy('.location', {
+    content:'Rotterdam',
+    placement: 'bottom',
+});
+document.getElementById('favoriet').addEventListener("click", function (){
+    window.localStorage.setItem('station', 'Rotterdam centraal')
+})
+$(function() {
+
+    $(document).mouseup(function (e) {
+        var container = $("#contactForm");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.fadeOut();
+        }
     });
 
+});

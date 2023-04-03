@@ -45,6 +45,10 @@
                 <h5>Bus</h5>
                 <p>klik hier om je Reis met de bus te plannen.</p>
 
+            </div><div class="card card5">
+                <h5>Water taxi</h5>
+                <p>COMING SOON.</p>
+
             </div>
         </div>
     </div>
