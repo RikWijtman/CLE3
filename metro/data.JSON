@@ -30,16 +30,115 @@
       "rush": 3
     },
     {
-      "stationname": "Meerzichtlaan",
-      "placename": "Zoetermeer",
+      "stationname": "de terp",
+      "placename": "Capelle",
       "todo": [
-        "Graffititunnel"
+        "winkelcentrum",
+        "speeltuin"
       ],
       "transfer": [
-
+        "bus"
       ],
       "accessibility": "Toegankelijk, ook voor rolstoel",
       "rush": 1
+    },
+    {
+      "stationname": "Den Haag Centraal",
+      "placename": "Den Haag",
+      "todo": [
+        "Mac Donalds",
+        "Winkelen"
+      ],
+      "transfer": [
+        "bus",
+        "trein"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 5
+    },
+    {
+      "stationname": "Nesselande",
+      "placename": "Rotterdam Nesselande",
+      "todo": [
+        "strand",
+        "waterskibaan",
+        "beach volleybal"
+      ],
+      "transfer": [
+        "bus"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 2
+    },
+
+    {
+      "stationname": "Alexander",
+      "placename": "Rotterdam",
+      "todo": [
+        "Mac Donalds",
+        "groot winkelcentrum"
+      ],
+      "transfer": [
+        "trein",
+        "bus"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
+    },
+    {
+      "stationname": "Hoek van Holland Haven",
+      "placename": "Hoek van Holland",
+      "todo": [
+        "Strand",
+        "diverse museums"
+      ],
+      "transfer": [
+        "bus"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 2
+    },
+    {
+      "stationname": "Rotterdam Centraal",
+      "placename": "Rotterdam",
+      "todo": [
+        "Supermarkt",
+        "Winkelstraten",
+        "Terrasjes"
+      ],
+      "transfer": [
+        "trein",
+        "tram"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 5
+    },
+    {
+      "stationname": "dijkzigt",
+      "placename": "Rotterdam",
+      "todo": [
+        "Supermarkt",
+        "Ziekenhuis",
+        "Hogeschool Rotterdam"
+      ],
+      "transfer": [
+        "bus"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 3
+    },
+    {
+      "stationname": "blijdorp",
+      "placename": "Rotterdam",
+      "todo": [
+        "dierentuin",
+        "park"
+      ],
+      "transfer": [
+        "bus"
+      ],
+      "accessibility": "Toegankelijk, ook met rolstoel",
+      "rush": 2
     }
-    ]
+  ]
   }
