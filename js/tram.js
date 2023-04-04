@@ -18,7 +18,6 @@ function addItem() {
     }
 }
 
-
 let elements = document.getElementsByClassName("location");
 
 for(let i = 0; i < elements.length; i++) {
