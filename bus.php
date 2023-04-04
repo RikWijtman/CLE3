@@ -15,17 +15,20 @@
     <div class="cols">
         <div>
             <img src="img/MapBus.png" width="384" draggable="false" usemap="#workmap" alt="">
-            <map name="workmap">
-                <area shape="circle" coords="62,10,18" alt="" href="includes/decodeRik.php?id=0">
-                <area shape="circle" coords="62,76,18" alt="" href="includes/decodeRik.php?id=1">
-                <area shape="circle" coords="62,132,18" alt="" href="includes/decodeRik.php?id=2">
-                <area shape="circle" coords="62,206,18" alt="" href="includes/decodeRik.php?id=3">
-                <area shape="circle" coords="62,268,18" alt="" href="includes/decodeRik.php?id=4">
+            <map name="workmap" id="mapbus">
+                <area shape="circle" coords="54,13,10" alt="">
+                <area shape="circle" coords="54,76,10" alt="">
+                <area shape="circle" coords="54,132,10" alt="">
+                <area shape="circle" coords="54,176,10" alt="">
+                <area shape="circle" coords="54,222,10" alt="">
+                <area shape="circle" coords="54,266,10" alt="">
             </map>
         </div>
         <div>
             <button id="tips">Tips</button>
             <div id="list">
+            </div>
+            <div id="stationinfo">
             </div>
         </div>
     </div>

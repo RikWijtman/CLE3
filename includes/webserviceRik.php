@@ -106,10 +106,10 @@ function getLocations() {
 /**
  * @return array
  */
-function getLocationDetails()
+function getLocationDetails($id)
 {
-    return [
-        [
+    $tags = [
+        1 => [
             "id" => 1,
             "stationname" => "Station Delft",
             "placename" => "Delft",
@@ -124,7 +124,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush" => 4
         ],
-        [
+        2 => [
             "id" => 2,
             "stationname"=> "Zuidpoort",
             "placename"=> "Delft",
@@ -140,7 +140,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 3
         ],
-        [
+        3 => [
             "id" => 3,
             "stationname"=> "Julianalaan",
             "placename"=> "Delft",
@@ -154,7 +154,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 1
         ],
-        [
+        4 => [
             "id" => 4,
             "stationname"=> "Aula",
             "placename"=> "Delft",
@@ -168,7 +168,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 3
         ],
-        [
+        5 => [
             "id" => 5,
             "stationname"=> "Prof. Krausstraat",
             "placename"=> "Delft",
@@ -182,7 +182,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 1
         ],
-        [
+        6 => [
             "id" => 6,
             "stationname"=> "Laan Der Zeven Linden",
             "placename"=> "Delfgauw",
@@ -196,7 +196,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk maar kan wat smal zijn voor een rolstoel",
             "rush"=> 2
         ],
-        [
+        7 => [
             "id"=> 7,
             "stationname"=> "Delfgauwseplein",
             "placename"=> "Delfgauw",
@@ -210,7 +210,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 1
         ],
-        [
+        8 => [
             "id"=> 8,
             "stationname"=> "Rijskade",
             "placename"=> "Pijnacker",
@@ -223,7 +223,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook met rolstoel",
             "rush"=> 1
         ],
-        [
+        9 => [
             "id"=> 9,
             "stationname"=> "Raadhuisplein",
             "placename"=> "Pijnacker",
@@ -238,7 +238,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 2
         ],
-        [
+        10 => [
             "id"=> 10,
             "stationname"=> "Station Pijnacker Centrum",
             "placename"=> "Pijnacker",
@@ -251,7 +251,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 2
         ],
-        [
+        11 => [
             "id"=> 11,
             "stationname"=> "Vlielandseweg",
             "placename"=> "Pijnacker",
@@ -264,7 +264,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        12 => [
             "id"=> 12,
             "stationname"=> "Zijdeweg",
             "placename"=> "Pijnacker",
@@ -278,7 +278,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        13 => [
             "id"=> 13,
             "stationname"=> "Katwijkerlaan Nr. 105",
             "placename"=> "Pijnacker",
@@ -291,7 +291,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        14 => [
             "id"=> 14,
             "stationname"=> "Driesprong",
             "placename"=> "Zoetermeer",
@@ -304,7 +304,7 @@ function getLocationDetails()
             "accessibility"=> "toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        15 => [
             "id"=> 15,
             "stationname"=> "Nathaliegang",
             "placename"=> "Zoetermeer",
@@ -319,7 +319,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 3
         ],
-        [
+        16 => [
             "id"=> 16,
             "stationname"=> "Station Zoetermeer",
             "placename"=> "Zoetermeer",
@@ -332,7 +332,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 4
         ],
-        [
+        17 => [
             "id"=> 17,
             "stationname"=> "Viaduct Afrikaweg",
             "placename"=> "Zoetermeer",
@@ -345,7 +345,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        18 =>[
             "id"=> 18,
             "stationname"=> "Meerzichtlaan",
             "placename"=> "Zoetermeer",
@@ -358,7 +358,7 @@ function getLocationDetails()
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 1
         ],
-        [
+        19 => [
             "id"=> 19,
             "stationname"=> "Centrum West",
             "placename"=> "Zoetermeer",
@@ -374,4 +374,6 @@ function getLocationDetails()
             "rush"=> 4
         ]
     ];
+
+    return $tags[$id];
 }
