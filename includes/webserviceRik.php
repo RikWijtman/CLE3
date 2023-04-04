@@ -99,6 +99,46 @@ function getLocations() {
             "id"=> 19,
             "stationname"=> "Centrum West",
             "placename"=> "Zoetermeer"
+        ],
+        [
+            "id"=> 20,
+            "stationname"=> "Michiel de Ruyterweg",
+            "placename"=> "Delft"
+        ],
+        [
+            "id"=> 21,
+            "stationname"=> "Poortlandplein",
+            "placename"=> "Delft"
+        ],
+        [
+            "id"=> 22,
+            "stationname"=> "Nassauplein",
+            "placename"=> "Delft"
+        ],
+        [
+            "id"=> 23,
+            "stationname"=> "Gouden Rijderplein",
+            "placename"=> "Delfgauw"
+        ],
+        [
+            "id"=> 24,
+            "stationname"=> "Hoefsmidstraat",
+            "placename"=> "Delfgauw"
+        ],
+        [
+            "id"=> 25,
+            "stationname"=> "Achtmanstraat",
+            "placename"=> "Delfgauw"
+        ],
+        [
+            "id"=> 26,
+            "stationname"=> "Laan Van Ruyven",
+            "placename"=> "Delfgauw"
+        ],
+        [
+            "id"=> 27,
+            "stationname"=> "Overslagweg",
+            "placename"=> "Delfgauw"
         ]
     ];
 }
@@ -372,6 +412,114 @@ function getLocationDetails($id)
             ],
             "accessibility"=> "Toegankelijk, ook voor rolstoel",
             "rush"=> 4
+        ],
+        20 => [
+            "id"=> 20,
+            "stationname"=> "Michiel de Ruyterweg",
+            "placename"=> "Delft",
+            "todo"=> [
+                "Science centre Delft",
+                "Mooie Boules (Jeu de boules)"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        21 => [
+            "id"=> 21,
+            "stationname"=> "Poortlandplein",
+            "placename"=> "Delft",
+            "todo"=> [
+                "Niks"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        22 => [
+            "id"=> 22,
+            "stationname"=> "Nassauplein",
+            "placename"=> "Delft",
+            "todo"=> [
+                "Chinees"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        23 =>[
+            "id"=> 23,
+            "stationname"=> "Gouden Rijderplein",
+            "placename"=> "Delfgauw",
+            "todo"=> [
+                "De emerald (dorpscentrum)",
+                "IJszaak"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        24 => [
+            "id"=> 24,
+            "stationname"=> "Hoefsmidstraat",
+            "placename"=> "Delfgauw",
+            "todo"=> [
+                "VR arcade",
+                "Monkey town (kinder binnenspeeltuin)"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        25 =>[
+            "id"=> 25,
+            "stationname"=> "Achtmanstraat",
+            "placename"=> "Delfgauw",
+            "todo"=> [
+                "Niks"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        26 =>[
+            "id"=> 26,
+            "stationname"=> "Laan Van Ruyven",
+            "placename"=> "Delfgauw",
+            "todo"=> [
+                "Albert Heijn",
+                "Kleine winkeltjes"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
+        ],
+        27 =>[
+            "id"=> 27,
+            "stationname"=> "Overslagweg",
+            "placename"=> "Delfgauw",
+            "todo"=> [
+                "Kleine winkeltjes"
+            ],
+            "transfer"=> [
+
+            ],
+            "accessibility"=> "Toegankelijk, ook voor rolstoel",
+            "rush"=> 1
         ]
     ];
 
