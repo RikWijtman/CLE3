@@ -52,16 +52,86 @@
             <div class="location" data-id="P.de hoofdweg">8</div>
         </div>
 
+        
         <div id="contactForm">
 
             <h1 id=Locatienaam></h1>
             <small>Tram</small>
-            <button id="favoriet">voeg toe aan favoriet</button>
+            <button id="toevoegen-knop">Toevoegen aan favorieten</button>
+
+            <hr>
+
+            <ul id="favorieten-lijst"></ul>
+
         </div>
-        <button id="tips">Tips</button>
-        <div id="list">
+
+        <div style="display: flex;">
+            <button id="tips">Tips</button>
+            <div id="list">
+            </div>
+            <button id="tonen-knop">Toon favorieten</button>
+            <div id="tonen-favoriet"></div>
+        <button id="verwijderen-knop">Verwijder favorieten</button>
         </div>
+
         </div>
+
+    <script>
+        // get all div elements with class name "location"
+        const locationDivs = document.querySelectorAll(".rental-manager-progress-bar-container .location");
+
+        // add a click event listener to each location div
+        locationDivs.forEach(function(div) {
+            div.addEventListener("click", function(event) {
+                // get the value of the data-id attribute from the clicked div element
+                const dataId = event.target.getAttribute("data-id");
+                console.log(dataId); // print the value of dataId to the console
+            });
+        });
+        // haal opgeslagen favorieten op uit de lokale opslag
+        var favorieten = JSON.parse(localStorage.getItem("favorieten")) || [];
+
+        // voeg een click-eventlistener toe aan de toevoegen-knop
+        var toevoegenKnop = document.getElementById("toevoegen-knop");
+        toevoegenKnop.addEventListener("click", function() {
+            // voeg de huidige URL toe aan de favorieten-lijst
+            const divElement = document.querySelector('div'); // select the div element
+            const dataId = divElement.getAttribute('data-id'); // get the value of the data-id attribute
+            favorieten.push("");
+
+            // sla de favorieten op in de lokale opslag
+            localStorage.setItem("favorieten", JSON.stringify(favorieten));
+        });
+
+        // voeg een click-eventlistener toe aan de tonen-knop
+        var tonenKnop = document.getElementById("tonen-knop");
+        tonenKnop.addEventListener("click", function() {
+            // maak de favorieten-lijst leeg
+            var favorietenLijst = document.getElementById("tonen-favoriet");
+            favorietenLijst.innerHTML = "";
+
+            // toon alle opgeslagen favorieten op de pagina
+            favorieten.forEach(function(favoriet) {
+                var listItem = document.createElement("li");
+                var link = document.createElement("a");
+                link.href = favoriet;
+                link.textContent = favoriet;
+                listItem.appendChild(link);
+                favorietenLijst.appendChild(listItem);
+            });
+        });
+
+        // voeg een click-eventlistener toe aan de verwijderen-knop
+        var verwijderenKnop = document.getElementById("verwijderen-knop");
+        verwijderenKnop.addEventListener("click", function() {
+            // verwijder alle opgeslagen favorieten uit de lokale opslag
+            localStorage.removeItem("favorieten");
+
+            // maak de favorieten-lijst leeg
+            var favorietenLijst = document.getElementById("favorieten-lijst");
+            favorietenLijst.innerHTML = "";
+        });
+    </script>
 
 </body>
 </html>

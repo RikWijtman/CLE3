@@ -1,14 +1,14 @@
 {
   "stations": [
     {
-      "stationname": "beurs",
+      "stationname": "Rotterdam centraal",
       "placename": "Rotterdam",
       "todo": [
         "Mac Donalds",
         "Maritiem Museum"
       ],
       "transfer": [
-        "Tram"
+        "trein, metro en bus"
       ],
       "accessibility": "Toegankelijk, ook met rolstoel",
       "rush": 5
