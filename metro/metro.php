@@ -10,37 +10,61 @@
     <title>Document</title>
 </head>
 <body>
+<br>
 <nav class="subway row justify-around align-end">
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle z-15"></div>
+        <span>Hoek van Holland</span>
+        <div class="circle z-15" data-id="Hoek van Holland"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle"></div>
+        <span>Schiedamcentrum</span>
+        <div class="circle" data-id="Schiedam Centrum"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle"></div>
+        <span>Dijkzigt</span>
+        <div class="circle" data-id="Dijkzigt"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle"></div>
+        <span>beurs</span>
+        <div class="circle" data-id="Beurs"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle"></div>
+        <span>Blaak</span>
+        <div class="circle" data-id="Blaak"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Subway Stop</span>
-        <div class="circle"></div>
+        <span>Oostplein</span>
+        <div class="circle" data-id="Oostplein"></div>
     </div>
+    <div class="item column align-center">
+        <hr class="line" />
+        <span>Kralingsezoom</span>
+        <div class="circle" data-id="Kralingsezoom"></div>
+    </div>
+    <div class="item column align-center">
+        <hr class="line" />
+        <span>Capelsebrug</span>
+        <div class="circle" data-id="Capelsebrug"></div>
+    </div>
+    <div class="item column align-center">
+        <hr class="line" />
+        <span>Alexander</span>
+        <div class="circle" data-id="Alexander"></div>
+    </div>
+    <div class="item column align-center">
+        <hr class="line" />
+        <span>Nesselande</span>
+        <div class="circle" data-id="Nesselande"></div>
+    </div>
+
+
+
 </nav>
 <button id="tips">Toon tips</button>
 <ul id="list"></ul>

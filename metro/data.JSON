@@ -30,7 +30,7 @@
       "rush": 3
     },
     {
-      "stationname": "de terp",
+      "stationname": "Kralingse zoom",
       "placename": "Capelle",
       "todo": [
         "winkelcentrum",
@@ -43,8 +43,8 @@
       "rush": 1
     },
     {
-      "stationname": "Den Haag Centraal",
-      "placename": "Den Haag",
+      "stationname": "Capelse brug",
+      "placename": "Capelle aan den IJssel",
       "todo": [
         "Mac Donalds",
         "Winkelen"
@@ -99,7 +99,7 @@
       "rush": 2
     },
     {
-      "stationname": "Rotterdam Centraal",
+      "stationname": "Schiedam Centrum",
       "placename": "Rotterdam",
       "todo": [
         "Supermarkt",
@@ -128,7 +128,7 @@
       "rush": 3
     },
     {
-      "stationname": "blijdorp",
+      "stationname": "Oostplein",
       "placename": "Rotterdam",
       "todo": [
         "dierentuin",
