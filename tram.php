@@ -32,7 +32,7 @@
         <div class="rental-manager-progress-bar-container">
             <div class="location" data-id="Rotterdam centraal">1</div>
             <div class="location" data-id="kruisplein">2</div>
-            <div class="location" data-id="eendrachts plein">3</div>
+            <div class="location" data-id="eendrachtsplein">3</div>
             <div class="location" data-id="museumpark">4</div>
             <div class="location" data-id="westplein">5</div>
             <div class="location" data-id="willemskade">6</div>

@@ -14,7 +14,7 @@
       "rush": 5
     },
     {
-      "stationname": "blaak",
+      "stationname": "kruisplein",
       "placename": "Rotterdam",
       "todo": [
         "Supermarkt",
@@ -30,8 +30,8 @@
       "rush": 3
     },
     {
-      "stationname": "Meerzichtlaan",
-      "placename": "Zoetermeer",
+      "stationname": "eendrachtsplein",
+      "placename": "Rotterdam",
       "todo": [
         "Graffititunnel"
       ],
