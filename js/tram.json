@@ -1,20 +1,20 @@
 {
   "stations": [
     {
-      "stationname": "beurs",
+      "stationname": "Rotterdam centraal",
       "placename": "Rotterdam",
       "todo": [
         "Mac Donalds",
         "Maritiem Museum"
       ],
       "transfer": [
-        "Tram"
+        "trein, metro en bus"
       ],
       "accessibility": "Toegankelijk, ook met rolstoel",
       "rush": 5
     },
     {
-      "stationname": "blaak",
+      "stationname": "kruisplein",
       "placename": "Rotterdam",
       "todo": [
         "Supermarkt",
@@ -30,8 +30,8 @@
       "rush": 3
     },
     {
-      "stationname": "Meerzichtlaan",
-      "placename": "Zoetermeer",
+      "stationname": "eendrachtsplein",
+      "placename": "Rotterdam",
       "todo": [
         "Graffititunnel"
       ],
