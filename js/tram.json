@@ -1,45 +1,153 @@
 {
-  "stations": [
-    {
-      "stationname": "Rotterdam centraal",
-      "placename": "Rotterdam",
-      "todo": [
-        "Mac Donalds",
-        "Maritiem Museum"
-      ],
-      "transfer": [
-        "trein, metro en bus"
-      ],
-      "accessibility": "Toegankelijk, ook met rolstoel",
-      "rush": 5
-    },
-    {
-      "stationname": "kruisplein",
-      "placename": "Rotterdam",
-      "todo": [
-        "Supermarkt",
-        "Winkelstraten",
-        "Terrasjes",
-        "Markthal"
-      ],
-      "transfer": [
-        "trein",
-        "tram"
-      ],
-      "accessibility": "Toegankelijk, ook met rolstoel",
-      "rush": 3
-    },
-    {
-      "stationname": "eendrachtsplein",
-      "placename": "Rotterdam",
-      "todo": [
-        "Graffititunnel"
-      ],
-      "transfer": [
+"lijnen": [
 
-      ],
-      "accessibility": "Toegankelijk, ook voor rolstoel",
-      "rush": 1
-    }
-  ]
+  {
+    "lijnnaam": "Tramlijn 7",
+    "lijnID": 7,
+    "stations": [
+      {
+        "stationname": "Rotterdam centraal",
+        "placename": "Rotterdam",
+        "todo": [
+          "Mac Donalds",
+          "Maritiem Museum"
+        ],
+        "transfer": [
+          "trein, metro en bus"
+        ],
+        "accessibility": "Toegankelijk, ook met rolstoel",
+        "rush": 5
+      },
+      {
+        "stationname": "kruisplein",
+        "placename": "Rotterdam",
+        "todo": [
+          "Supermarkt",
+          "Winkelstraten",
+          "Terrasjes",
+          "Markthal"
+        ],
+        "transfer": [
+          "trein",
+          "tram"
+        ],
+        "accessibility": "Toegankelijk, ook met rolstoel",
+        "rush": 3,
+        "image": "kruisplein.png"
+      },
+      {
+        "stationname": "eendrachtsplein",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      },
+      {
+        "stationname": "museumpark",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      },
+      {
+        "stationname": "Westplein",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      }
+    ]
+  },
+
+
+
+
+  {
+    "lijnnaam": "Tramlijn 8",
+    "lijnID": 8,
+    "stations": [
+      {
+        "stationname": "Rotterdam centraal",
+        "placename": "Rotterdam",
+        "todo": [
+          "Mac Donalds",
+          "Maritiem Museum"
+        ],
+        "transfer": [
+          "trein, metro en bus"
+        ],
+        "accessibility": "Toegankelijk, ook met rolstoel",
+        "rush": 5
+      },
+      {
+        "stationname": "kruisplein",
+        "placename": "Rotterdam",
+        "todo": [
+          "Supermarkt",
+          "Winkelstraten",
+          "Terrasjes",
+          "Markthal"
+        ],
+        "transfer": [
+          "trein",
+          "tram"
+        ],
+        "accessibility": "Toegankelijk, ook met rolstoel",
+        "rush": 3
+      },
+      {
+        "stationname": "Lijnbaan",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      },
+      {
+        "stationname": "Beurs",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      },
+      {
+        "stationname": "Leuvehaven",
+        "placename": "Rotterdam",
+        "todo": [
+          "Graffititunnel"
+        ],
+        "transfer": [
+
+        ],
+        "accessibility": "Toegankelijk, ook voor rolstoel",
+        "rush": 1
+      }
+    ]
+  }
+]
+
 }

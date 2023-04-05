@@ -1,26 +1,34 @@
-let button = document.getElementById('tips');
-let mapBus = document.getElementById('mapbus')
+window.addEventListener('load', init);
 
-button.addEventListener('click', tipsHandler);
-mapBus.addEventListener('click', infoHandler);
+let button = document.getElementById('tips');
+let dialogButton = document.getElementById('dialogbutton')
+let mapBus = document.getElementById('mapbus')
+let div = document.getElementById('list')
 
 let tipListActive = false;
-let infoActive = false;
+let stationname;
+let favoritesList = [];
+let stationId;
+let favoritesIdList = [];
+
+function init() {
+    button.addEventListener('click', tipsHandler);
+    dialogButton.addEventListener('click', dialogHandler);
+    mapBus.addEventListener('click', infoHandler);
+}
 
 function tipsHandler() {
-    let div = document.getElementById('list')
     if (!tipListActive) {
-        let item = document.createElement('p');
-        item.innerText = '1)De bus kan vaak onregelmatig rijden, zorg er dus voor dat je op tijd voor je bus komt of dat je de ns app of 9292 regelmatig checkt. \n ' +
-            '2)Het is mogelijk dat de bus wat voller is tijdens spits, dit houdt in dat het rond negen uur s’ochtens en rond vijf uur s’middags wat drukker kan zijn. \n' +
-            '3)Stations kunnen wat lastiger te bereiken zijn voor minder mobiele mensen, check daarvoor op onze app.';
-        div.appendChild(item);
-
+        div.showModal();
         tipListActive = true;
-    }else{
-        document.querySelector("#list").innerHTML = ``;
-        tipListActive = false;
     }
+}
+function dialogHandler() {
+    if (!tipListActive) {
+        return;
+    }
+    tipListActive = false;
+    div.close();
 }
 
 function infoHandler(e) {
@@ -28,17 +36,12 @@ function infoHandler(e) {
     if (target.nodeName !== 'AREA') {
         return;
     }
-    if (!infoActive) {
-        ajaxHandler();
-        infoActive = true;
-    }else{
-        document.querySelector("#stationinfo").innerHTML = ``;
-        infoActive = false;
-    }
+    ajaxHandler(target.classList.value);
+    infoActive = true;
 }
 
-function ajaxHandler() {
-    fetch("includes/decodeRik.php?id=1")
+function ajaxHandler(classid) {
+    fetch(`includes/decodeRik.php?id=${classid}`)
         .then((response) => {
             if(response.ok) {
                 return response.json();
@@ -51,7 +54,10 @@ function ajaxHandler() {
 
 function ajaxSuccesHandler(data) {
     let stationInfoBox = document.getElementById('stationinfo');
-    let p = document.createElement('p');
+
+    stationInfoBox.innerText = '';
+
+    let p = document.createElement('h1');
     p.innerHTML = `${data.stationname}, ${data.placename}`;
     stationInfoBox.appendChild(p);
 
@@ -84,6 +90,74 @@ function ajaxSuccesHandler(data) {
     let p3 = document.createElement('p');
     p3.innerHTML = `drukte: ${data.rush}/5`;
     stationInfoBox.appendChild(p3);
+
+    let button = document.createElement('button');
+    button.innerText = 'Voeg toe als favoriet';
+    button.classList.add('ingameButton');
+    stationInfoBox.appendChild(button);
+
+    stationname = data.stationname;
+    stationId = data.id;
+
+    button.addEventListener('click', favoriteHandler);
+}
+
+function favoriteHandler() {
+    for (let i = 0; i < favoritesList.length; i++) {
+        if (favoritesList[i] === stationname) {
+            return;
+        }
+    }
+    favoritesList.push(stationname);
+    favoritesIdList.push(stationId);
+
+    localStorage.setItem('Favorites', JSON.stringify(favoritesList));
+
+    makeFavoriteList();
+}
+
+function makeFavoriteList() {
+    let favoList = document.getElementById('favoList');
+    let favorites = localStorage.getItem('Favorites');
+
+    let newfavorite = favorites.replaceAll('[', '')
+    favorites = newfavorite.replaceAll(']', '');
+    newfavorite = favorites.replaceAll(`"`, '');
+
+    let favoriteList = newfavorite.split(`,`);
+
+    favoList.innerText = '';
+
+    for (let i = 0; i < favoriteList.length; i++) {
+        let li = document.createElement('li');
+        li.innerText = favoriteList[i];
+        li.id = favoritesIdList[i];
+        favoList.appendChild(li);
+    }
+
+    let button = document.createElement('button');
+    button.innerText = 'verwijder favorieten';
+    button.classList.add('ingameButton');
+    favoList.appendChild(button);
+
+    button.addEventListener('click', deleteHandler);
+    favoList.addEventListener('click', locateHandler)
+}
+
+function locateHandler(e) {
+    let target = e.target;
+    if (target.nodeName !== 'LI') {
+        return;
+    }
+    ajaxHandler(target.id);
+}
+
+function deleteHandler() {
+    favoritesList = [];
+    localStorage.removeItem('Favorites');
+
+    let favoList = document.getElementById('favoList');
+    favoList.innerText = '';
 }
 
 function ajaxErrorHandler(data) {
