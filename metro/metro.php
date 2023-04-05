@@ -19,7 +19,7 @@
     </div>
     <div class="item column align-center">
         <hr class="line" />
-        <span>Schiedamcentrum</span>
+        <span>Schiedam Centrum</span>
         <div class="circle" data-id="Schiedam Centrum"></div>
     </div>
     <div class="item column align-center">
@@ -82,5 +82,7 @@
     </div>
 </form>
 <button type="button" id="delete" >Delete items in local storage</button>
+<br>
+
 </body>
 </html>

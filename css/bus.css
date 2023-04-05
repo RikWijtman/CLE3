@@ -2,3 +2,147 @@
     display: flex;
     flex-direction: row;
 }
+body {
+    width:100% ;
+    height: 100vh;
+
+    background: rgb(206, 213, 15);
+    background: -moz-linear-gradient(17deg, rgb(206, 213, 15) 0%, rgb(236, 219, 175) 100%);
+    background: -webkit-linear-gradient(17deg, rgb(206, 213, 15) 0%, rgb(236, 219, 175) 100%);
+    background: linear-gradient(17deg, rgb(206, 213, 15) 0%, rgb(236, 219, 175) 100%);
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+    border-style: solid;
+    border-color: #ffecc0;
+    border-width: 4px;
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    margin: 10px 10px 10px 10px;
+}
+.button {
+    width: 100px;
+}
+.navbar{
+     height: 12%;
+     display:flex;
+     align-items: center;
+}
+.ingameButton {
+    width: 140px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, 0.34);
+
+    border-style: solid;
+    border-color: #ffecc0;
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+
+#infoContainer {
+    display: block;
+    width:66vw;
+    height:82vh;
+}
+#routeContainer {
+    display: block;
+    width:30vw;
+    height:82vh;
+}
+#titleContainer {
+    display: block;
+    width:98vw;
+    height:11vh;
+}
+#stationinfo {
+    margin-left: 10px;
+}
+#list {
+    border-color: #ffecc0;
+    background: -moz-linear-gradient(17deg, rgb(236, 219, 175) 0%, rgb(220, 225, 99) 100%);
+    background: -webkit-linear-gradient(17deg, rgb(236, 219, 175) 0%, rgb(220, 225, 99) 100%);
+    background: linear-gradient(17deg, rgb(236, 219, 175) 0%, rgb(220, 225, 99) 100%);
+}
+#tips {
+    margin-left: 27.5vw;
+}
+#homeButton {
+    margin-left: 2vw;
+}
+#title {
+    margin-left: 25vw;
+}
+#logo{
+    height:100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+#stationinfo {
+    width: 30vw;
+}
+
+
+
+
+
+hr {
+    width: 0;
+    height: 60vh;
+    margin-right: 10px;
+}
+
+p, li {
+    font-size: 16px;
+}
+nav{
+    position:sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    font-family: monospace;
+}
+
+nav ul{
+    margin-left: 30px;
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px;
+
+    text-shadow: 2px 0 5px #818181, -2px 0 5px #818181;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
