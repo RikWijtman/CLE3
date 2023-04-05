@@ -1,14 +1,9 @@
 <?php
-/**
- * @return array
- */
-function getLocationDetails($id)
-{
     $stations = [
     1 => [
         "id" => 1,
         "stationname" => "Hoek van Holland",
-        "placename" => "Delft",
+        "placename" => "hoek van holland",
         "todo" => [
             "Pizzeria",
             "IJssallon"
@@ -23,7 +18,7 @@ function getLocationDetails($id)
     2 => [
         "id" => 2,
         "stationname"=> "Schiedam Centrum",
-        "placename"=> "Delft",
+        "placename"=> "Schiedam",
         "todo" => [
             "Supermarkt",
             "Winkelstraten",
@@ -39,7 +34,7 @@ function getLocationDetails($id)
     3 => [
         "id" => 3,
         "stationname"=> "Dijkzigt",
-        "placename"=> "Delft",
+        "placename"=> "rotterdam",
         "todo"=> [
             "IJszaak",
             "Klein parkje"
@@ -53,7 +48,7 @@ function getLocationDetails($id)
     4 => [
         "id" => 4,
         "stationname"=> "Beurs",
-        "placename"=> "Delft",
+        "placename"=> "rotterdam",
         "todo"=> [
             "Technische universiteit Delft",
             "Royal Delft (Museum aardewerk)"
@@ -67,7 +62,7 @@ function getLocationDetails($id)
     5 => [
         "id" => 5,
         "stationname"=> "Blaak",
-        "placename"=> "Delft",
+        "placename"=> "rotterdam",
         "todo"=> [
             "Kapper",
             "Snackbar"
@@ -81,7 +76,7 @@ function getLocationDetails($id)
     6 => [
         "id" => 6,
         "stationname"=> "Oostplein",
-        "placename"=> "Delfgauw",
+        "placename"=> "rotterdam",
         "todo"=> [
             "Albert Heijn",
             "Verhage"
@@ -95,7 +90,7 @@ function getLocationDetails($id)
     7 => [
         "id"=> 7,
         "stationname"=> "Kralingsezoom",
-        "placename"=> "Delfgauw",
+        "placename"=> "rotterdam",
         "todo"=> [
             "Pizzeria",
             "Verzorgingszaak"
@@ -109,7 +104,7 @@ function getLocationDetails($id)
     8 => [
         "id"=> 8,
         "stationname"=> "capelsebrug",
-        "placename"=> "Pijnacker",
+        "placename"=> "capelle",
         "todo"=> [
             "Niks"
         ],
@@ -122,7 +117,7 @@ function getLocationDetails($id)
     9 => [
         "id"=> 9,
         "stationname"=> "alexander",
-        "placename"=> "Pijnacker",
+        "placename"=> "capelle",
         "todo"=> [
             "Restaurants",
             "Winkelcentrum",
@@ -137,7 +132,7 @@ function getLocationDetails($id)
     10 => [
         "id"=> 10,
         "stationname"=> "Nesselande",
-        "placename"=> "Pijnacker",
+        "placename"=> "rotterdam nesselande",
         "todo"=> [
             "Apotheek"
         ],
@@ -148,5 +143,5 @@ function getLocationDetails($id)
         "rush"=> 2
         ]
     ];
-    return $stations[$id];
-}
+    echo json_encode($stations);
+

@@ -70,12 +70,8 @@
 <ul id="list"></ul>
 <form id="form">
     <div class="form-item">
-        <label for="name">Name</label>
+        <label for="name">jou veel gebruikte station </label>
         <input type="text" id="name" name="name"/>
-    </div>
-    <div class="form-item">
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age"/>
     </div>
     <div class="form-item">
         <input type="submit" name="submit" value="Save in local storage"/>

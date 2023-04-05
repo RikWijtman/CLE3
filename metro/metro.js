@@ -1,5 +1,5 @@
-let button1 = document.getElementById('tips');
-button1.addEventListener('click', addItem);
+let button = document.getElementById('tips');
+button.addEventListener('click', addItem);
 let listActive = false;
 
     function addItem() {
@@ -19,6 +19,56 @@ let listActive = false;
 }
 window.addEventListener('load', init);
 
+//Global vars
+let form;
+let nameField;
+let ageField;
+let deleteButton;
+
+function init() {
+    if (typeof window.localStorage === "undefined") {
+        console.error('Local storage is not available in your browser');
+        return;
+    }
+
+    form = document.getElementById('form');
+    nameField = document.getElementById('name');
+    deleteButton = document.getElementById('delete');
+
+    fillFieldsFromLocalStorage();
+    form.addEventListener('submit', formSubmitHandler);
+    deleteButton.addEventListener('click', deleteClickHandler);
+}
+
+/**
+ * Is local storage is available on page load? Let's fill the form
+ */
+function fillFieldsFromLocalStorage() {
+    if (localStorage.getItem('name') !== null) {
+        nameField.value = localStorage.getItem('name');
+    }
+}
+
+/**
+ * After submitting the form, let's save the values in the local storage
+ *
+ * @param e
+ */
+function formSubmitHandler(e) {
+    e.preventDefault();
+    localStorage.setItem('name', nameField.value);
+}
+
+/**
+ * Make sure we clean up the local storage again
+ *
+ * @param e
+ */
+function deleteClickHandler(e) {
+    localStorage.removeItem('name');
+}
+
+
 // Selecteer alle elementen met class naam 'circle'
 const circles = document.querySelectorAll('.circle');
 
@@ -32,7 +82,7 @@ circles.forEach(circle => {
 
     // Voeg een click event listener toe aan de button
     button2.addEventListener('click', function() {
-        console.log('Je hebt op de knop geklikt!');
+        console.log("top");
     });
 
     // Vervang de circle met de button
@@ -62,9 +112,24 @@ fetch('data.json')
         console.error('Error fetching JSON file:', error);
     });
 
+fetch(`server.php`)
+    .then(response => response.json())
+    .then(data => {
+        for (let i = 1; i <= 10; i++) {
+            const circles = document.querySelectorAll(".circle" + i);
+            circles.forEach(circle => {
+                console.log(data);
+            });
+        }
 
+        // Doe iets met de gegevens, bijvoorbeeld loggen naar de console
+        console.log(data)
 
-
+    })
+    .catch(error => {
+        // Als er een fout optreedt bij het ophalen of parsen van de JSON
+        console.error('Error fetching JSON file:', error);
+    });
 
 
 
