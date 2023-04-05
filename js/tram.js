@@ -24,21 +24,15 @@ for(let i = 0; i < elements.length; i++) {
     elements[i].onclick = function () { $('#contactForm').fadeToggle();
         var element = event.target;
         $('#Locatienaam' ).text(element.dataset.id);
-        alert(elements.dataset.id)
  //       var element = event.target;
 //      alert(element.dataset.id);
 
     }
 }
-// With the above scripts loaded, you can call `tippy()` with a CSS
-// selector and a `content` prop:
-tippy('.location', {
-    content:'Rotterdam',
-    placement: 'bottom',
-});
-document.getElementById('favoriet').addEventListener("click", function (){
-    window.localStorage.setItem('station', 'Rotterdam centraal')
-})
+
+//document.getElementById('favoriet').addEventListener("click", function (){
+//    window.localStorage.setItem('station', 'Rotterdam centraal')
+//})
 $(function() {
 
     $(document).mouseup(function (e) {
