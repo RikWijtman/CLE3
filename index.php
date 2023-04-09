@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col">
             <h1> Rdam-reis</h1>
-            <p>dag je uit of weekje weg? hier zit u goed op deze site vindt u alle trein, bus en metro stations en routes in Rotterdam en omstreken, u reist en wij wijzen u de weg! </p>
+            <h3>dag je uit of weekje weg? hier zit u goed op deze site vindt u alle trein, bus en metro stations en routes in Rotterdam en omstreken, u reist en wij wijzen u de weg! </h3>
             <button type="button">Plan je rit</button>
         </div>
         <div>

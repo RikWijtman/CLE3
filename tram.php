@@ -35,7 +35,11 @@
 
             <h1 id=Locatienaam></h1>
             <small>Tram</small>
+
+            <p id=</p>
+
             <button id="toevoegen-knop">Toevoegen aan favorieten</button>
+
 
             <hr>
 
@@ -207,6 +211,7 @@
             var favorietenLijst = document.getElementById("favorieten-lijst");
             favorietenLijst.innerHTML = "";
             document.getElementById("tonen-favoriet").innerHTML = "";
+
 
 
         });
