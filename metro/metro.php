@@ -15,52 +15,52 @@
     <div class="item column align-center">
         <hr class="line" />
         <span>Hoek van Holland</span>
-        <div class="circle z-15" data-id="Hoek van Holland"></div>
+        <div class="circle z-15" data-id="1"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Schiedam Centrum</span>
-        <div class="circle" data-id="Schiedam Centrum"></div>
+        <div class="circle" data-id="2"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Dijkzigt</span>
-        <div class="circle" data-id="Dijkzigt"></div>
+        <div class="circle" data-id="3"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>beurs</span>
-        <div class="circle" data-id="Beurs"></div>
+        <div class="circle" data-id="4"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Blaak</span>
-        <div class="circle" data-id="Blaak"></div>
+        <div class="circle" data-id="5"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Oostplein</span>
-        <div class="circle" data-id="Oostplein"></div>
+        <div class="circle" data-id="6"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Kralingsezoom</span>
-        <div class="circle" data-id="Kralingsezoom"></div>
+        <div class="circle" data-id="7"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Capelsebrug</span>
-        <div class="circle" data-id="Capelsebrug"></div>
+        <div class="circle" data-id="8"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Alexander</span>
-        <div class="circle" data-id="Alexander"></div>
+        <div class="circle" data-id="9"></div>
     </div>
     <div class="item column align-center">
         <hr class="line" />
         <span>Nesselande</span>
-        <div class="circle" data-id="Nesselande"></div>
+        <div class="circle" data-id="10"></div>
     </div>
 
 
@@ -70,12 +70,8 @@
 <ul id="list"></ul>
 <form id="form">
     <div class="form-item">
-        <label for="name">Name</label>
+        <label for="name">jou veel gebruikte station </label>
         <input type="text" id="name" name="name"/>
-    </div>
-    <div class="form-item">
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age"/>
     </div>
     <div class="form-item">
         <input type="submit" name="submit" value="Save in local storage"/>
@@ -83,6 +79,7 @@
 </form>
 <button type="button" id="delete" >Delete items in local storage</button>
 <br>
+
 
 </body>
 </html>

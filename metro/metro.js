@@ -33,7 +33,6 @@ function init() {
 
     form = document.getElementById('form');
     nameField = document.getElementById('name');
-    ageField = document.getElementById('age');
     deleteButton = document.getElementById('delete');
 
     fillFieldsFromLocalStorage();
@@ -45,9 +44,8 @@ function init() {
  * Is local storage is available on page load? Let's fill the form
  */
 function fillFieldsFromLocalStorage() {
-    if (localStorage.getItem('name') !== null && localStorage.getItem('age') !== null) {
+    if (localStorage.getItem('name') !== null) {
         nameField.value = localStorage.getItem('name');
-        ageField.value = localStorage.getItem('age');
     }
 }
 
@@ -59,7 +57,6 @@ function fillFieldsFromLocalStorage() {
 function formSubmitHandler(e) {
     e.preventDefault();
     localStorage.setItem('name', nameField.value);
-    localStorage.setItem('age', ageField.value);
 }
 
 /**
@@ -69,8 +66,8 @@ function formSubmitHandler(e) {
  */
 function deleteClickHandler(e) {
     localStorage.removeItem('name');
-    localStorage.removeItem('age');
 }
+
 
 // Selecteer alle elementen met class naam 'circle'
 const circles = document.querySelectorAll('.circle');
@@ -85,7 +82,7 @@ circles.forEach(circle => {
 
     // Voeg een click event listener toe aan de button
     button2.addEventListener('click', function() {
-        console.log('Je hebt op de knop geklikt!');
+        console.log("top");
     });
 
     // Vervang de circle met de button
@@ -114,6 +111,26 @@ fetch('data.json')
         // Als er een fout optreedt bij het ophalen of parsen van de JSON
         console.error('Error fetching JSON file:', error);
     });
+
+fetch(`server.php`)
+    .then(response => response.json())
+    .then(data => {
+        for (let i = 1; i <= 10; i++) {
+            const circles = document.querySelectorAll(".circle" + i);
+            circles.forEach(circle => {
+                console.log(data);
+            });
+        }
+
+        // Doe iets met de gegevens, bijvoorbeeld loggen naar de console
+        console.log(data)
+
+    })
+    .catch(error => {
+        // Als er een fout optreedt bij het ophalen of parsen van de JSON
+        console.error('Error fetching JSON file:', error);
+    });
+
 
 
 
