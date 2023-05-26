@@ -15,7 +15,7 @@
 <button id="tips">Toon tips</button>
 <ul id="list"></ul>
 <br>
-<button id="showObjectsButton">Toon Objecten</button>
+<button id="fetchStationsButton">Fetch Stations</button>
 <div id="objectContainer"></div>
 </body>
 </html>
